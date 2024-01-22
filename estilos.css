@@ -1,0 +1,178 @@
+.navbar {
+    background-color: #004aad; /* Cambia el color de fondo aquí */
+    color: white;
+}
+.separacion-superior {
+    margin-top: 40px; /* Puedes ajustar este valor según tu preferencia */
+}
+.separacion {
+    margin-top: 35px; /* Puedes ajustar este valor según tu preferencia */
+}
+
+body {
+    margin-top: 56px;
+}
+
+/* Ajustes para el carrusel */
+#carouselExampleSlidesOnly {
+    max-height: 300px; /* Ajusta la altura máxima según sea necesario */
+    margin-top: 30px; /* Ajusta el margen superior para evitar solapamiento */
+}
+
+/* Ajustes para las tarjetas de servicios y capacitaciones */
+.card {
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 26);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 13));
+        transform: translateX(calc(-200px * 13));
+    }
+}
+
+
+/* Estilos de los cursos */
+.todo {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    
+}
+
+.cursos {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.cursos .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.cursos .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.cursos .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cursos .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.cursos .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: white;
+    padding: 15px;
+    color: #434b4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.cursos .back .link {
+    border-top: solid 1px #004aad;
+    height: 50px;
+    line-height: 50px;
+}
+
+.cursos .back .link a {
+    color: #004aad;
+}
+
+.cursos .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.cursos .back p {
+    letter-spacing: 1px;
+} 
+
+.cursos:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.cursos:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* Estilos de mision y vision */
+.completo {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between; /* Ahora utiliza space-between para separar los grupos */
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-left: 20px;
+    align-self: center; /* Centra el texto verticalmente */
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 150px;
+}

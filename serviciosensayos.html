@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>KUBIKA INSPECTION WELDING AND NDT E.I.R.L.</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#" style="color: white;">KUBIKA</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="principal.html" style="color: white;">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">Servicios</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="serviciossoldadura.html">SERVICIOS DE CALIFICACIÓN DE
+                            PROCEDIMIENTOS DE SOLDADURA, SOLDADORES</a>
+                        <a class="dropdown-item" href="serviciosensayos.html">SERVICIOS EN ENSAYOS NO DESTRUCTIVOS Y
+                            MANTENIMIENTO</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">Capacitaciones</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cursoensayos.html">CURSOS DE CAPACITACIÓN Y CERTIFICACIÓN EN
+                            ENSAYOS NO DESTRUCTIVOS</a>
+                        <a class="dropdown-item" href="cursossoldadura.html">CURSOS DE ENTRENAMIENTO Y CAPACITACIÓN EN
+                            SOLDADURA</a>
+                        <a class="dropdown-item" href="cursosmantenimiento.html">CURSOS DE ENTRENAMIENTO Y CAPACITACIÓN
+                            EN MANTENIMIENTO INDUSTRIAL</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input id="codigoInput" class="form-control mr-sm-2" type="search" placeholder="Buscar Certificado" aria-label="Search">
+                <button id="buscarBtn" style="border-color: #65A7B3; color: white;" class="btn btn-outline-success my-2 my-sm-0"
+                    type="button" onmouseover="this.style.backgroundColor='#65A7B3';" onmouseout="this.style.backgroundColor='transparent';"
+                    onclick="buscarCertificado()">Buscar</button>
+            </form>
+
+            <script>
+                function buscarCertificado() {
+                    // Obtener el valor del campo de búsqueda
+                    var codigo = document.getElementById("codigoInput").value;
+                
+                    // Construir el nombre del archivo PDF
+                    var nombreArchivo = codigo + ".pdf";
+                
+                    // Abrir una ventana emergente con el PDF
+                    window.open("certificados/" + nombreArchivo, "_blank");
+                }
+                </script>
+            
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center">SERVICIOS EN ENSAYOS NO DESTRUCTIVOS Y MANTENIMIENTO</h1>
+        <div class="card-deck">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de inspección visual en soldadura y equipos industriales</p>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary" style="background-color: #004aad; border-color: #65A7B3;"">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de líquidos penetrantes a soldadura, equipos industriales y equipo
+                            pesado</p>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary" style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/3.1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de partículas magnéticas a soldadura, equipos industriales y
+                            equipo pesado</p>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary" style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de medición de espesores por ultrasonido
+                        </p>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary" style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/5.1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de ultrasonido en soldadura, equipo industrial y equipo pesado
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary" style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/6.1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de inspección de recubrimientos industriales
+                        </p>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary"  style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+           <!-- Inserta el siguiente código para mostrar el mapa -->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/7.1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de termografía infrarroja
+                        </p>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary"  style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/8.1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de ensayos de dureza
+                        </p>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary"  style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/9.1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de alineamiento industrial
+                        </p>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary"  style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagenes servicios/serviciosensayos/10.1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Servicio de analisis de vibraciones
+                        </p>
+                        <br>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="btn btn-primary" style="background-color: #004aad; border-color: #65A7B3;">Informacion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #65A7B3; color: white;" class="mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="mb-4 text-center">Siguenos en redes</h4>
+                    <div class="d-flex flex-column">
+                        <a href="https://www.facebook.com/KubikaInspection/" class="text-white fs-4 mb-3">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="https://www.linkedin.com/company/kubika-inspection-welding-ndt/" class="text-white fs-4 mb-3">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4 class="mb-4 text-center">Contáctanos</h4>
+                    <div class="d-flex flex-column">
+                        <a href="mailto:administracion@kubikainspection.com" class="text-white fs-4 mb-3">
+                            <i class="far fa-envelope"></i> administracion@kubikainspection.com
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=51957995836&text=Deseo%20m%C3%A1s%20informaci%C3%B3n" class="text-white fs-4 mb-3">
+                            <i class="fab fa-whatsapp"></i> 957995836
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4 class="text-center">Ubicación</h4>
+                    <!-- Inserta el siguiente código para mostrar el mapa -->
+                    <iframe class="text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.8849420007377!2d-71.52500248965302!3d-16.430668884236926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b20d097a119%3A0x16309169ccf81bad!2sUrb.%20RESIDENCIAL%20LOS%20OLMOS!5e0!3m2!1ses!2spe!4v1705094957350!5m2!1ses!2spe" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- No eliminar es para que la pagina sea responsive -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
